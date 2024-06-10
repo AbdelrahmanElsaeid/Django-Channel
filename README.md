@@ -2,13 +2,23 @@
 # Django Channels Chat Application
 
 This is a simple chat application built using Django Channels to enable real-time communication.
+## Installation
+`python -m pip install -U channels["daphne"]`
+
+
+```python
+INSTALLED_APPS = (
+    "daphne",
+    ...
+)
+```
 
 ## Configuration
 
 1. Update `settings.py` to include the Channels configuration:
   Add `dephne` to `INSTALLED_APPS` in `settings.py`
 
-   ```python
+```python
    INSTALLED_APPS = [
        ...
        'dephane',
@@ -22,8 +32,7 @@ This is a simple chat application built using Django Channels to enable real-tim
         "BACKEND": "channels.layers.InMemoryChannelLayer"
     }
 }
-
-   ```
+ ```
 
 2. update `asgi.py` to handle both HTTP and WebSocket requests
 
