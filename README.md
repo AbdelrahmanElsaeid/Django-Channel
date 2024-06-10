@@ -6,13 +6,6 @@ This is a simple chat application built using Django Channels to enable real-tim
 `python -m pip install -U channels["daphne"]`
 
 
-```python
-INSTALLED_APPS = (
-    "daphne",
-    ...
-)
-```
-
 ## Configuration
 
 1. Update `settings.py` to include the Channels configuration:
